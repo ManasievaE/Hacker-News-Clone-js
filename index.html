@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script></script>
+    <title>Hacker News Clone</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo-pic" src="imgs/hacker logo.png" />
+      <h2>Search<br />Hacker News</h2>
+      <form>
+        <select id="text" type="text">
+          <option>Stories</option>
+        </select>
+        <input
+          id="search"
+          type="text"
+          placeholder="Search stories by title,url or author"
+          value
+        />
+        <button id="search-logo" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <p id="by">by</p>
+      <img class="alg-pic" src="imgs/algolia.png" />
+      <p class="sort">Sort by:</p>
+      <p class="sorted" id="popular">Popularity</p>
+      <p class="sorted" id="date">Date</p>
+    </header>
+    <div class="side-menu">
+      <a class="nav-item" id="all" href="#/"
+        ><i class="far fa-list-alt"></i>All</a
+      >
+      <br />
+      <a class="nav-item" id="hot" href="#/newest"
+        ><i class="fas fa-fire-alt"></i>Hot</a
+      >
+      <br />
+      <a class="nav-item" id="show" href="#/show"
+        ><i class="fas fa-volume-up"></i>Show HN</a
+      >
+      <br />
+      <a class="nav-item" id="ask" href="#/ask"
+        ><i class="fas fa-comments"></i>Ask HN</a
+      >
+      <br />
+      <a class="nav-item" id="poll" href="#/polls"
+        ><i class="far fa-lightbulb"></i>Polls</a
+      >
+      <br />
+      <a class="nav-item" id="jobs" href="#/jobs"
+        ><i class="fas fa-suitcase"></i>Jobs</a
+      >
+      <hr />
+      <a class="nav-item" id="starred" href="#/starred" id="far"
+        ><i class="fas fa-star"></i>Starred</a
+      >
+    </div>
+    <div class="main-body">
+      <div class="second-header">
+        <p>All</p>
+        <form class="btns">
+          <input checked type="radio" id="24h" name="radio-button" />
+          <label for="24h">Last 24h</label>
+          <input checked type="radio" id="week" name="radio-button" />
+          <label for="week">Past week</label>
+          <input checked type="radio" id="month" name="radio-button" />
+          <label for="month">Past month</label>
+          <input checked type="radio" id="forever" name="radio-button" />
+          <label for="forever">Forever</label>
+        </form>
+      </div>
+      <main>
+        <ul>
+          <!-- JavaScript adds items -->
+        </ul>
+      </main>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script src="//unpkg.com/navigo@6.0.2/lib/navigo.min.js"></script>
+  </body>
+</html>
